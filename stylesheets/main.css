@@ -1,0 +1,219 @@
+/* line 5, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "TT Norms";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/TTNorms-Regular.otf");
+}
+@font-face {
+  font-family: "TT Norms";
+  font-weight: 500;
+  src: url("../fonts//TTNorms-Medium.otf");
+}
+/* line 17, ../sass/main.scss */
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+/* line 21, ../sass/main.scss */
+html {
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+}
+
+/* line 27, ../sass/main.scss */
+html, body {
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 33, ../sass/main.scss */
+body {
+  margin: 0;
+  font-family: "TT Norms", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--body-color);
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  overscroll-behavior-y: none;
+  box-sizing: border-box;
+  background: var(--success-color);
+}
+
+/* line 47, ../sass/main.scss */
+:root {
+  --body-color: #202539;
+  --body-light-color: #000000;
+  --gray-light-color: #F2F4F7;
+  --gray-color: #E1E4ED;
+  --primary-color: #4573FF;
+  --success-color: #41D9A6;
+}
+
+/* line 56, ../sass/main.scss */
+.btn:focus {
+  box-shadow: none !important;
+}
+
+/* line 60, ../sass/main.scss */
+.dropdown-toggle::after {
+  display: none;
+}
+
+/* line 66, ../sass/main.scss */
+.page {
+  height: 100%;
+  max-height: 100vh;
+  overflow: hidden auto;
+}
+
+/* line 72, ../sass/main.scss */
+.page-main {
+  display: flex;
+}
+
+/* line 76, ../sass/main.scss */
+.page-section {
+  height: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+@media (min-width: 992px) {
+  /* line 76, ../sass/main.scss */
+  .page-section {
+    width: calc(100% - 240px);
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 92, ../sass/main.scss */
+  .menu-collapsed .page-section,
+  .menu-collapsing .page-section {
+    width: calc(100% - 62px);
+  }
+}
+
+/* line 99, ../sass/main.scss */
+.page-section-content {
+  flex: 1;
+  background: #f2f4f7;
+}
+/* line 104, ../sass/main.scss */
+.page-section-content .demo-content {
+  height: 2000px;
+  background: linear-gradient(#DAF5E5, #9198e5);
+  margin: 1rem;
+}
+
+/* line 113, ../sass/main.scss */
+.page-header-search {
+  position: relative;
+}
+/* line 116, ../sass/main.scss */
+.page-header-search i {
+  position: absolute;
+  left: 0.66rem;
+  top: 12px;
+  color: #595E6C;
+  font-size: .9rem;
+}
+/* line 124, ../sass/main.scss */
+.page-header-search input {
+  padding-left: 2rem;
+  font-size: 0.9rem;
+  height: 40px;
+  padding-bottom: 0.45rem;
+}
+/* line 130, ../sass/main.scss */
+.page-header-search input:focus {
+  box-shadow: none;
+}
+
+/* line 136, ../sass/main.scss */
+.count-badge {
+  margin-left: 0.5rem;
+  height: 17px;
+  min-width: 17px;
+  border-radius: 17px;
+  padding: 0 0.2rem;
+  text-align: center;
+  background: var(--success-color);
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--aside-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
