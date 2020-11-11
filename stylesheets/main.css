@@ -64,36 +64,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 @font-face {
-  font-family: "TT Norms";
+  font-family: "Titulo";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/TTNorms-Regular.otf");
 }
 @font-face {
-  font-family: "TT Norms";
+  font-family: "Titulo";
+  font-weight: 500;
+  src: url("../fonts/TTNorms-Regular.otf");
+}
+@font-face {
+  font-family: "texto";
   font-weight: 500;
   src: url("../fonts//TTNorms-Medium.otf");
 }
-/* line 17, ../sass/main.scss */
+/* line 23, ../sass/main.scss */
 *, ::before, ::after {
   box-sizing: border-box;
 }
 
-/* line 21, ../sass/main.scss */
+/* line 27, ../sass/main.scss */
 html {
   display: flex;
   min-height: 100%;
   width: 100%;
 }
 
-/* line 27, ../sass/main.scss */
+/* line 33, ../sass/main.scss */
 html, body {
   font-size: 17px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 33, ../sass/main.scss */
+/* line 39, ../sass/main.scss */
 body {
   margin: 0;
   font-family: "TT Norms", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -105,10 +110,10 @@ body {
   height: 100%;
   overscroll-behavior-y: none;
   box-sizing: border-box;
-  background: var(--success-color);
+  background: #BFADFF;
 }
 
-/* line 47, ../sass/main.scss */
+/* line 53, ../sass/main.scss */
 :root {
   --body-color: #202539;
   --body-light-color: #000000;
@@ -118,29 +123,29 @@ body {
   --success-color: #41D9A6;
 }
 
-/* line 56, ../sass/main.scss */
+/* line 62, ../sass/main.scss */
 .btn:focus {
   box-shadow: none !important;
 }
 
-/* line 60, ../sass/main.scss */
+/* line 67, ../sass/main.scss */
 .dropdown-toggle::after {
   display: none;
 }
 
-/* line 66, ../sass/main.scss */
+/* line 73, ../sass/main.scss */
 .page {
   height: 100%;
   max-height: 100vh;
   overflow: hidden auto;
 }
 
-/* line 72, ../sass/main.scss */
+/* line 79, ../sass/main.scss */
 .page-main {
   display: flex;
 }
 
-/* line 76, ../sass/main.scss */
+/* line 83, ../sass/main.scss */
 .page-section {
   height: 100%;
   background: #fff;
@@ -150,37 +155,37 @@ body {
   position: relative;
 }
 @media (min-width: 992px) {
-  /* line 76, ../sass/main.scss */
+  /* line 83, ../sass/main.scss */
   .page-section {
     width: calc(100% - 240px);
   }
 }
 
 @media (min-width: 992px) {
-  /* line 92, ../sass/main.scss */
+  /* line 99, ../sass/main.scss */
   .menu-collapsed .page-section,
   .menu-collapsing .page-section {
     width: calc(100% - 62px);
   }
 }
 
-/* line 99, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
 .page-section-content {
   flex: 1;
   background: #f2f4f7;
 }
-/* line 104, ../sass/main.scss */
+/* line 111, ../sass/main.scss */
 .page-section-content .demo-content {
   height: 2000px;
   background: linear-gradient(#DAF5E5, #9198e5);
   margin: 1rem;
 }
 
-/* line 113, ../sass/main.scss */
+/* line 120, ../sass/main.scss */
 .page-header-search {
   position: relative;
 }
-/* line 116, ../sass/main.scss */
+/* line 123, ../sass/main.scss */
 .page-header-search i {
   position: absolute;
   left: 0.66rem;
@@ -188,19 +193,19 @@ body {
   color: #595E6C;
   font-size: .9rem;
 }
-/* line 124, ../sass/main.scss */
+/* line 131, ../sass/main.scss */
 .page-header-search input {
   padding-left: 2rem;
   font-size: 0.9rem;
   height: 40px;
   padding-bottom: 0.45rem;
 }
-/* line 130, ../sass/main.scss */
+/* line 137, ../sass/main.scss */
 .page-header-search input:focus {
   box-shadow: none;
 }
 
-/* line 136, ../sass/main.scss */
+/* line 143, ../sass/main.scss */
 .count-badge {
   margin-left: 0.5rem;
   height: 17px;
