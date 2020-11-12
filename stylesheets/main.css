@@ -115,11 +115,11 @@ body {
 
 /* line 53, ../sass/main.scss */
 :root {
-  --body-color: #202539;
+  --body-color: #345C19;
   --body-light-color: #000000;
   --gray-light-color: #F2F4F7;
   --gray-color: #E1E4ED;
-  --primary-color: #4573FF;
+  --primary-color: #345C19;
   --success-color: #41D9A6;
 }
 
@@ -133,92 +133,62 @@ body {
   display: none;
 }
 
-/* line 73, ../sass/main.scss */
-.page {
-  height: 100%;
-  max-height: 100vh;
-  overflow: hidden auto;
+/* line 74, ../sass/main.scss */
+.follow-btn {
+  border: 1px solid #345C19;
+  box-sizing: border-box;
+  color: #345c19;
+  border-radius: 8px;
 }
-
 /* line 79, ../sass/main.scss */
-.page-main {
-  display: flex;
+.follow-btn :hover {
+  background-color: #345C19;
+  color: #E1E4ED;
 }
 
-/* line 83, ../sass/main.scss */
-.page-section {
-  height: 100%;
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  position: relative;
-}
-@media (min-width: 992px) {
-  /* line 83, ../sass/main.scss */
-  .page-section {
-    width: calc(100% - 240px);
-  }
+/* line 85, ../sass/main.scss */
+.btn-outline-primary:hover {
+  background-color: #345C19;
+  color: #E1E4ED;
 }
 
-@media (min-width: 992px) {
-  /* line 99, ../sass/main.scss */
-  .menu-collapsed .page-section,
-  .menu-collapsing .page-section {
-    width: calc(100% - 62px);
-  }
+/* line 90, ../sass/main.scss */
+.sativa-header {
+  display: inline-flex;
+  padding: 20px 0px;
 }
-
-/* line 106, ../sass/main.scss */
-.page-section-content {
+/* line 93, ../sass/main.scss */
+.sativa-header .header-block {
   flex: 1;
-  background: #f2f4f7;
-}
-/* line 111, ../sass/main.scss */
-.page-section-content .demo-content {
-  height: 2000px;
-  background: linear-gradient(#DAF5E5, #9198e5);
-  margin: 1rem;
+  align-self: center;
+  align-content: center;
 }
 
-/* line 120, ../sass/main.scss */
-.page-header-search {
+/* line 99, ../sass/main.scss */
+.jumbotron {
+  height: 80vh;
+  background-image: url("https://uploads-ssl.webflow.com/5fa3b580c5175b342f38a4c6/5fa3bfa07b020f6e9a02ad6b_hero%207.jpg");
+}
+
+/* line 103, ../sass/main.scss */
+.us-section {
+  background-color: aqua;
   position: relative;
+  padding: 80px 0px;
+  height: 100vh;
 }
-/* line 123, ../sass/main.scss */
-.page-header-search i {
+/* line 108, ../sass/main.scss */
+.us-section .follow-block {
   position: absolute;
-  left: 0.66rem;
-  top: 12px;
-  color: #595E6C;
-  font-size: .9rem;
-}
-/* line 131, ../sass/main.scss */
-.page-header-search input {
-  padding-left: 2rem;
-  font-size: 0.9rem;
-  height: 40px;
-  padding-bottom: 0.45rem;
-}
-/* line 137, ../sass/main.scss */
-.page-header-search input:focus {
-  box-shadow: none;
+  bottom: 50px;
 }
 
-/* line 143, ../sass/main.scss */
-.count-badge {
-  margin-left: 0.5rem;
-  height: 17px;
-  min-width: 17px;
-  border-radius: 17px;
-  padding: 0 0.2rem;
-  text-align: center;
-  background: var(--success-color);
-  font-size: 0.65rem;
-  font-weight: 600;
-  color: var(--aside-bg-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
+/* line 113, ../sass/main.scss */
+.promo-img {
+  padding: 80px 0px;
+}
+
+/* line 116, ../sass/main.scss */
+.sativa-mision {
+  padding: 80px 0px;
 }

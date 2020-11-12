@@ -51,11 +51,11 @@ body {
 }
 
 :root {
-  --body-color: #202539;
+  --body-color: #345C19;
   --body-light-color: #000000;
   --gray-light-color: #F2F4F7;
   --gray-color: #E1E4ED;
-  --primary-color: #4573FF;
+  --primary-color: #345C19;
   --success-color: #41D9A6;
 }
 
@@ -70,90 +70,49 @@ body {
 
 // Page layout
 
-.page {
-  height: 100%;
-  max-height: 100vh;
-  overflow: hidden auto;
+
+.follow-btn {
+  border: 1px solid #345C19;
+  box-sizing: border-box;
+  color: #345c19;
+  border-radius: 8px;
+  :hover {
+    background-color: #345C19;
+    color: #E1E4ED;
+  }
 }
 
-.page-main {
-  display: flex;
+.btn-outline-primary:hover {
+    background-color: #345C19;
+    color: #E1E4ED;
 }
 
-.page-section {
-  height: 100%;
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+.sativa-header {
+  display: inline-flex;
+  padding: 20px 0px;
+  .header-block {
+    flex: 1;
+    align-self: center;
+    align-content: center;
+  }
+}
+.jumbotron {
+  height: 80vh;
+  background-image: url("https://uploads-ssl.webflow.com/5fa3b580c5175b342f38a4c6/5fa3bfa07b020f6e9a02ad6b_hero%207.jpg");
+}
+.us-section {
+  background-color: aqua;
   position: relative;
-
-  @media (min-width: 992px) {
-    width: calc(100% - 240px);
-  }
-
-}
-
-.menu-collapsed,
-.menu-collapsing {
-  .page-section {
-    @media (min-width: 992px) {
-      width: calc(100% - 62px);
-    }
-  }
-}
-
-.page-section-content {
-  flex: 1;
-  background: #f2f4f7;
-
-  // this is only for the demo
-  .demo-content {
-    height: 2000px;
-    background: linear-gradient(#DAF5E5, #9198e5);
-    margin: 1rem;
-  }
-}
-
-// Components
-
-.page-header-search {
-  position: relative;
-
-  i {
+  padding: 80px 0px;
+  height: 100vh;
+  .follow-block {
     position: absolute;
-    left: 0.66rem;
-    top: 12px;
-    color: #595E6C;
-    font-size: .9rem;
-  }
-
-  input { 
-    padding-left: 2rem;
-    font-size: 0.9rem;
-    height: 40px;
-    padding-bottom: 0.45rem;
-
-    &:focus {
-      box-shadow: none;
-    }
+    bottom: 50px;
   }
 }
-
-.count-badge {
-  margin-left: 0.5rem;
-  height: 17px;
-  min-width: 17px;
-  border-radius: 17px;
-  padding: 0 0.2rem;
-  text-align: center;
-  background: var(--success-color);
-  font-size: 0.65rem;
-  font-weight: 600;
-  color: var(--aside-bg-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
+.promo-img {
+  padding: 80px 0px;
 }
-
+.sativa-mision {
+  padding: 80px 0px;
+}
