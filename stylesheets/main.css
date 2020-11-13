@@ -64,44 +64,43 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 @font-face {
-  font-family: "Titulo";
+  font-family: "headings";
   font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/TTNorms-Regular.otf");
+  font-size: 55px;
+  font-weight: 500;
+  src: url("../fonts/Ogg-Regular.otf");
 }
 @font-face {
-  font-family: "Titulo";
-  font-weight: 500;
-  src: url("../fonts/TTNorms-Regular.otf");
+  font-family: "BananaGrotesk-Regular";
+  font-weight: 300;
+  src: url("../fonts/BananaGrotesk-Regular.otf");
 }
-@font-face {
-  font-family: "texto";
-  font-weight: 500;
-  src: url("../fonts//TTNorms-Medium.otf");
-}
-/* line 23, ../sass/main.scss */
+/* line 21, ../sass/main.scss */
 *, ::before, ::after {
   box-sizing: border-box;
 }
 
-/* line 27, ../sass/main.scss */
+/* line 25, ../sass/main.scss */
 html {
   display: flex;
   min-height: 100%;
   width: 100%;
 }
 
-/* line 33, ../sass/main.scss */
+/* line 31, ../sass/main.scss */
 html, body {
+  font-family: 'headings';
   font-size: 17px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 39, ../sass/main.scss */
+/* line 38, ../sass/main.scss */
 body {
+  background: #fb9f8d;
+  background: linear-gradient(0deg, #fb9f8d 0%, white 48%, #b8bdff 100%);
   margin: 0;
-  font-family: "TT Norms", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "BananaGrotesk-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 400;
   line-height: 1.5;
   color: var(--body-color);
@@ -110,85 +109,117 @@ body {
   height: 100%;
   overscroll-behavior-y: none;
   box-sizing: border-box;
-  background: #BFADFF;
 }
 
-/* line 53, ../sass/main.scss */
+/* line 54, ../sass/main.scss */
 :root {
   --body-color: #345C19;
   --body-light-color: #000000;
-  --gray-light-color: #F2F4F7;
+  --gray-light-color: #FDF0EC;
   --gray-color: #E1E4ED;
-  --primary-color: #345C19;
+  --primary-color: #B8BDFF;
   --success-color: #41D9A6;
 }
 
-/* line 62, ../sass/main.scss */
+/* line 63, ../sass/main.scss */
 .btn:focus {
   box-shadow: none !important;
 }
 
-/* line 67, ../sass/main.scss */
+/* line 68, ../sass/main.scss */
 .dropdown-toggle::after {
   display: none;
 }
 
 /* line 74, ../sass/main.scss */
+.sativa-headings {
+  font-size: 55px;
+  border-bottom: 1px solid var(--body-color);
+}
+
+/* line 80, ../sass/main.scss */
 .follow-btn {
   border: 1px solid #345C19;
   box-sizing: border-box;
   color: #345c19;
   border-radius: 8px;
 }
-/* line 79, ../sass/main.scss */
+/* line 85, ../sass/main.scss */
 .follow-btn :hover {
   background-color: #345C19;
   color: #E1E4ED;
 }
 
-/* line 85, ../sass/main.scss */
+/* line 91, ../sass/main.scss */
 .btn-outline-primary:hover {
   background-color: #345C19;
   color: #E1E4ED;
 }
 
-/* line 90, ../sass/main.scss */
+/* line 96, ../sass/main.scss */
 .sativa-header {
   display: inline-flex;
   padding: 20px 0px;
+  background: #b8bdff;
+  background: linear-gradient(0deg, #b8bdff 0%, #b8bdff 100%);
 }
-/* line 93, ../sass/main.scss */
+/* line 101, ../sass/main.scss */
 .sativa-header .header-block {
   flex: 1;
   align-self: center;
   align-content: center;
 }
 
-/* line 99, ../sass/main.scss */
+/* line 107, ../sass/main.scss */
 .jumbotron {
+  margin: 0px;
   height: 80vh;
-  background-image: url("https://uploads-ssl.webflow.com/5fa3b580c5175b342f38a4c6/5fa3bfa07b020f6e9a02ad6b_hero%207.jpg");
+  background: #a5d5a6;
+  background: linear-gradient(0deg, #a5d5a6 0%, white 44%, #b8bdff 100%);
 }
 
-/* line 103, ../sass/main.scss */
+/* line 113, ../sass/main.scss */
 .us-section {
-  background-color: aqua;
+  background: #b8bdff;
+  background: linear-gradient(0deg, #b8bdff 0%, white 48%, #a5d5a6 100%);
   position: relative;
   padding: 80px 0px;
   height: 100vh;
 }
-/* line 108, ../sass/main.scss */
+/* line 119, ../sass/main.scss */
 .us-section .follow-block {
+  padding: 15px;
   position: absolute;
   bottom: 50px;
+  border-top: 1px solid var(--body-color);
+  border-bottom: 1px solid var(--body-color);
 }
 
-/* line 113, ../sass/main.scss */
+/* line 128, ../sass/main.scss */
+.animated-banner {
+  background-color: red;
+}
+
+/* line 131, ../sass/main.scss */
 .promo-img {
   padding: 80px 0px;
+  background-color: white;
 }
 
-/* line 116, ../sass/main.scss */
+/* line 135, ../sass/main.scss */
 .sativa-mision {
   padding: 80px 0px;
+}
+
+/* line 139, ../sass/main.scss */
+.bottom-banner {
+  padding: 80px 0px;
+  background: #fb9f8d;
+  background: linear-gradient(180deg, #fb9f8d 0%, white 44%, #b8bdff 100%);
+}
+
+/* line 144, ../sass/main.scss */
+.sativa-foot {
+  padding: 80px 0px;
+  background: var(--gray-light-color);
 }
