@@ -172,40 +172,38 @@ body a {
 @media (max-width: 576px) {
   /* line 96, ../sass/main.scss */
   .follow-btn {
-    width: 160px;
-    margin-left: 15px;
-    font-size: 14px;
+    display: none;
   }
 }
 
-/* line 116, ../sass/main.scss */
+/* line 114, ../sass/main.scss */
 .btn-outline-primary:hover {
   background-color: transparent;
   color: var(--body-light-color);
   border: 1px solid var(--body-light-color);
 }
 
-/* line 122, ../sass/main.scss */
+/* line 120, ../sass/main.scss */
 .sativa-header {
   display: inline-flex;
   padding: 20px 0px;
   background: #b8bdff;
   background: linear-gradient(0deg, #b8bdff 0%, #b8bdff 100%);
 }
-/* line 127, ../sass/main.scss */
+/* line 125, ../sass/main.scss */
 .sativa-header .header-block {
   flex: 1;
   align-self: center;
   align-content: center;
 }
 @media (max-width: 576px) {
-  /* line 133, ../sass/main.scss */
+  /* line 131, ../sass/main.scss */
   .sativa-header a {
     display: none;
   }
 }
 
-/* line 139, ../sass/main.scss */
+/* line 137, ../sass/main.scss */
 .jumbotron {
   margin: 0px;
   height: 80vh;
@@ -213,43 +211,43 @@ body a {
   background: linear-gradient(0deg, #a5d5a6 0%, white 44%, #b8bdff 100%);
 }
 @media (max-width: 768px) {
-  /* line 139, ../sass/main.scss */
+  /* line 137, ../sass/main.scss */
   .jumbotron {
     height: 40vh;
   }
 }
 @media (max-width: 576px) {
-  /* line 139, ../sass/main.scss */
+  /* line 137, ../sass/main.scss */
   .jumbotron {
     height: 50vh;
   }
 }
 
-/* line 153, ../sass/main.scss */
+/* line 151, ../sass/main.scss */
 .sativa-headings h1 {
   font-size: 80px;
   line-height: 83px;
 }
 @media (max-width: 768px) {
-  /* line 158, ../sass/main.scss */
+  /* line 156, ../sass/main.scss */
   .sativa-headings h1 {
     font-size: 50px;
     line-height: 53px;
   }
-  /* line 162, ../sass/main.scss */
+  /* line 160, ../sass/main.scss */
   .sativa-headings p {
     font-size: 14px;
   }
 }
 @media (max-width: 576px) {
-  /* line 167, ../sass/main.scss */
+  /* line 165, ../sass/main.scss */
   .sativa-headings h1 {
     font-size: 33px;
     line-height: 30px;
   }
 }
 
-/* line 174, ../sass/main.scss */
+/* line 172, ../sass/main.scss */
 .us-section {
   background: #b8bdff;
   background: linear-gradient(0deg, #b8bdff 0%, white 48%, #a5d5a6 100%);
@@ -257,16 +255,16 @@ body a {
   padding: 80px 0px;
   height: 100vh;
 }
-/* line 175, ../sass/main.scss */
+/* line 173, ../sass/main.scss */
 .us-section h1 {
   font-size: 47px;
   line-height: 50px;
 }
-/* line 179, ../sass/main.scss */
+/* line 177, ../sass/main.scss */
 .us-section ul.circle {
   list-style-type: circle;
 }
-/* line 187, ../sass/main.scss */
+/* line 185, ../sass/main.scss */
 .us-section .follow-block {
   padding: 15px;
   position: absolute;
@@ -275,22 +273,23 @@ body a {
   border-top: 1px solid var(--body-color);
   border-bottom: 1px solid var(--body-color);
 }
-/* line 194, ../sass/main.scss */
+/* line 192, ../sass/main.scss */
 .us-section .follow-block p {
   width: 280px;
 }
 @media (max-width: 576px) {
-  /* line 187, ../sass/main.scss */
+  /* line 185, ../sass/main.scss */
   .us-section .follow-block {
-    max-width: 380px;
+    max-width: 285px;
   }
-  /* line 198, ../sass/main.scss */
+  /* line 196, ../sass/main.scss */
   .us-section .follow-block p {
     width: auto;
+    font-size: 14px;
   }
 }
 @media (max-width: 768px) {
-  /* line 174, ../sass/main.scss */
+  /* line 172, ../sass/main.scss */
   .us-section {
     height: 50vh;
   }
@@ -305,68 +304,84 @@ body a {
   }
 }
 @media (max-width: 576px) {
-  /* line 174, ../sass/main.scss */
+  /* line 172, ../sass/main.scss */
   .us-section {
+    padding: 60px 0px;
     height: 100vh;
+  }
+  /* line 217, ../sass/main.scss */
+  .us-section h1 {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  /* line 221, ../sass/main.scss */
+  .us-section ul {
+    margin-left: 15px;
   }
 }
 
-/* line 219, ../sass/main.scss */
+/* line 227, ../sass/main.scss */
 .animated-banner {
   padding: 60px 0px;
   background-color: var(--gray-light-color);
   font-family: 'halloweed';
 }
-/* line 223, ../sass/main.scss */
+/* line 231, ../sass/main.scss */
 .animated-banner .animation-track {
   padding: .35em;
 }
 
-/* line 227, ../sass/main.scss */
+/* line 235, ../sass/main.scss */
 .promo-img {
   padding: 80px 0px;
   background-color: white;
 }
 
-/* line 231, ../sass/main.scss */
+/* line 239, ../sass/main.scss */
 .sativa-mision {
   padding: 80px 0px;
 }
-/* line 233, ../sass/main.scss */
+/* line 241, ../sass/main.scss */
 .sativa-mision h1 {
   font-size: 47px;
   line-height: 50px;
 }
 @media (max-width: 768px) {
-  /* line 231, ../sass/main.scss */
+  /* line 239, ../sass/main.scss */
   .sativa-mision {
     height: 30vh;
   }
-  /* line 239, ../sass/main.scss */
+  /* line 247, ../sass/main.scss */
   .sativa-mision h1 {
     font-size: 30px;
     line-height: 33px;
   }
-  /* line 243, ../sass/main.scss */
+  /* line 251, ../sass/main.scss */
   .sativa-mision p {
     font-size: 14px;
   }
 }
+@media (max-width: 576px) {
+  /* line 239, ../sass/main.scss */
+  .sativa-mision {
+    height: initial;
+  }
+}
 
-/* line 249, ../sass/main.scss */
+/* line 260, ../sass/main.scss */
 .bottom-banner {
   padding: 80px 0px;
   background: #fb9f8d;
   background: linear-gradient(180deg, #fb9f8d 0%, white 44%, #b8bdff 100%);
 }
-/* line 250, ../sass/main.scss */
+/* line 261, ../sass/main.scss */
 .bottom-banner h2 {
   font-family: 'headings';
   font-size: 37px;
   line-height: 40px;
 }
 
-/* line 259, ../sass/main.scss */
+/* line 270, ../sass/main.scss */
 .sativa-foot {
   padding: 80px 0px;
   background: var(--gray-light-color);
