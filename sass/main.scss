@@ -166,13 +166,8 @@ body {
   padding: 60px 0px;
   background-color: var(--gray-light-color);
   font-family: 'halloweed';
-  width: 100%;
-  z-index: 40;
   .animation-track {
-    white-space: nowrap;
     padding: .35em;
-    -webkit-animation: marquee 70s linear infinite;
-    animation: marquee 70s linear infinite;
   }
 }
 .promo-img {
@@ -180,10 +175,19 @@ body {
   background-color: white;
 }
 .sativa-mision {
+  h1 {
+    font-size: 47px;
+    line-height: 50px;
+  }
   padding: 80px 0px;
 }
 
 .bottom-banner {
+  h2 {
+    font-family: 'headings';
+    font-size: 37px;
+    line-height: 40px;
+  }
   padding: 80px 0px;
   background: rgb(251,159,141);
   background: linear-gradient(180deg, rgba(251,159,141,1) 0%, rgba(255,255,255,1) 44%, rgba(184,189,255,1) 100%);
