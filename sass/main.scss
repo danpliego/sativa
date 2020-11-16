@@ -10,7 +10,7 @@
 }
 
 @font-face {
-  font-family: "BananaGrotesk-Regular";
+  font-family: "paragraph";
   font-weight: 300;
   src: url('../fonts/BananaGrotesk-Regular.otf');
 }
@@ -28,8 +28,8 @@ html {
   width: 100%;
 }
 
-html, body {
-  font-family: 'headings';
+html, body, {
+  font-family: 'paragraph';
   font-size: 17px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -39,7 +39,7 @@ body {
   background: rgb(251,159,141);
   background: linear-gradient(0deg, rgba(251,159,141,1) 0%, rgba(255,255,255,1) 48%, rgba(184,189,255,1) 100%);
   margin: 0;
-  font-family: "BananaGrotesk-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "paragraph", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 400;
   line-height: 1.5;
   color: var(--body-color);
@@ -48,12 +48,19 @@ body {
   height: 100%;
   overscroll-behavior-y: none;
   box-sizing: border-box;
+  h1 {
+    font-family: 'headings';
 
+  }
+   a {
+     color: var(--body-color);
+   }
 }
+
 
 :root {
   --body-color: #345C19;
-  --body-light-color: #000000;
+  --body-light-color: #6CAD67;
   --gray-light-color: #FDF0EC;
   --gray-color: #E1E4ED;
   --primary-color: #B8BDFF;
@@ -78,19 +85,24 @@ body {
 
 
 .follow-btn {
-  border: 1px solid #345C19;
-  box-sizing: border-box;
-  color: #345c19;
-  border-radius: 8px;
+    width: 230px;
+    height: 49px;
+    left: 110px;
+    top: 48px;
+    border: 1px solid var(--body-color);
+    box-sizing: border-box;
+    color: #345c19;
+    border-radius: 8px;
   :hover {
-    background-color: #345C19;
     color: #E1E4ED;
+    border: 1px solid var(--success-color);
   }
 }
 
 .btn-outline-primary:hover {
-    background-color: #345C19;
-    color: #E1E4ED;
+    background-color: transparent;
+    color: var(--body-light-color);
+    border: 1px solid var(--body-light-color);
 }
 
 .sativa-header {
@@ -110,7 +122,19 @@ body {
   background: rgb(165,213,166);
   background: linear-gradient(0deg, rgba(165,213,166,1) 0%, rgba(255,255,255,1) 44%, rgba(184,189,255,1) 100%);
 }
+
+.sativa-headings {
+  h1 {
+    font-size: 80px;
+    line-height: 83px;
+  }
+}
+
 .us-section {
+  h1 {
+    font-size: 47px;
+    line-height: 50px;
+  }
   background: rgb(184,189,255);
   background: linear-gradient(0deg, rgba(184,189,255,1) 0%, rgba(255,255,255,1) 48%, rgba(165,213,166,1) 100%);
   position: relative;
@@ -119,9 +143,13 @@ body {
   .follow-block {
     padding: 15px;
     position: absolute;
+    display: inline-flex;
     bottom: 50px;
     border-top: 1px solid var(--body-color);
     border-bottom: 1px solid var(--body-color);
+    p {
+      width: 280px;
+    }
   }
 }
 

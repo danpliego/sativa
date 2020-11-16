@@ -71,7 +71,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url("../fonts/Ogg-Regular.otf");
 }
 @font-face {
-  font-family: "BananaGrotesk-Regular";
+  font-family: "paragraph";
   font-weight: 300;
   src: url("../fonts/BananaGrotesk-Regular.otf");
 }
@@ -89,7 +89,7 @@ html {
 
 /* line 31, ../sass/main.scss */
 html, body {
-  font-family: 'headings';
+  font-family: 'paragraph';
   font-size: 17px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -100,7 +100,7 @@ body {
   background: #fb9f8d;
   background: linear-gradient(0deg, #fb9f8d 0%, white 48%, #b8bdff 100%);
   margin: 0;
-  font-family: "BananaGrotesk-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "paragraph", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 400;
   line-height: 1.5;
   color: var(--body-color);
@@ -110,67 +110,80 @@ body {
   overscroll-behavior-y: none;
   box-sizing: border-box;
 }
+/* line 51, ../sass/main.scss */
+body h1 {
+  font-family: 'headings';
+}
+/* line 55, ../sass/main.scss */
+body a {
+  color: var(--body-color);
+}
 
-/* line 54, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
 :root {
   --body-color: #345C19;
-  --body-light-color: #000000;
+  --body-light-color: #6CAD67;
   --gray-light-color: #FDF0EC;
   --gray-color: #E1E4ED;
   --primary-color: #B8BDFF;
   --success-color: #41D9A6;
 }
 
-/* line 63, ../sass/main.scss */
+/* line 70, ../sass/main.scss */
 .btn:focus {
   box-shadow: none !important;
 }
 
-/* line 68, ../sass/main.scss */
+/* line 75, ../sass/main.scss */
 .dropdown-toggle::after {
   display: none;
 }
 
-/* line 74, ../sass/main.scss */
+/* line 81, ../sass/main.scss */
 .sativa-headings {
   font-size: 55px;
   border-bottom: 1px solid var(--body-color);
 }
 
-/* line 80, ../sass/main.scss */
+/* line 87, ../sass/main.scss */
 .follow-btn {
-  border: 1px solid #345C19;
+  width: 230px;
+  height: 49px;
+  left: 110px;
+  top: 48px;
+  border: 1px solid var(--body-color);
   box-sizing: border-box;
   color: #345c19;
   border-radius: 8px;
 }
-/* line 85, ../sass/main.scss */
-.follow-btn :hover {
-  background-color: #345C19;
-  color: #E1E4ED;
-}
-
-/* line 91, ../sass/main.scss */
-.btn-outline-primary:hover {
-  background-color: #345C19;
-  color: #E1E4ED;
-}
-
 /* line 96, ../sass/main.scss */
+.follow-btn :hover {
+  color: #E1E4ED;
+  border: 1px solid var(--success-color);
+}
+
+/* line 102, ../sass/main.scss */
+.btn-outline-primary:hover {
+  background-color: transparent;
+  color: var(--body-light-color);
+  border: 1px solid var(--body-light-color);
+}
+
+/* line 108, ../sass/main.scss */
 .sativa-header {
   display: inline-flex;
   padding: 20px 0px;
   background: #b8bdff;
   background: linear-gradient(0deg, #b8bdff 0%, #b8bdff 100%);
 }
-/* line 101, ../sass/main.scss */
+/* line 113, ../sass/main.scss */
 .sativa-header .header-block {
   flex: 1;
   align-self: center;
   align-content: center;
 }
 
-/* line 107, ../sass/main.scss */
+/* line 119, ../sass/main.scss */
 .jumbotron {
   margin: 0px;
   height: 80vh;
@@ -178,7 +191,13 @@ body {
   background: linear-gradient(0deg, #a5d5a6 0%, white 44%, #b8bdff 100%);
 }
 
-/* line 113, ../sass/main.scss */
+/* line 127, ../sass/main.scss */
+.sativa-headings h1 {
+  font-size: 80px;
+  line-height: 83px;
+}
+
+/* line 133, ../sass/main.scss */
 .us-section {
   background: #b8bdff;
   background: linear-gradient(0deg, #b8bdff 0%, white 48%, #a5d5a6 100%);
@@ -186,39 +205,49 @@ body {
   padding: 80px 0px;
   height: 100vh;
 }
-/* line 119, ../sass/main.scss */
+/* line 134, ../sass/main.scss */
+.us-section h1 {
+  font-size: 47px;
+  line-height: 50px;
+}
+/* line 143, ../sass/main.scss */
 .us-section .follow-block {
   padding: 15px;
   position: absolute;
+  display: inline-flex;
   bottom: 50px;
   border-top: 1px solid var(--body-color);
   border-bottom: 1px solid var(--body-color);
 }
+/* line 150, ../sass/main.scss */
+.us-section .follow-block p {
+  width: 280px;
+}
 
-/* line 128, ../sass/main.scss */
+/* line 156, ../sass/main.scss */
 .animated-banner {
   background-color: red;
 }
 
-/* line 131, ../sass/main.scss */
+/* line 159, ../sass/main.scss */
 .promo-img {
   padding: 80px 0px;
   background-color: white;
 }
 
-/* line 135, ../sass/main.scss */
+/* line 163, ../sass/main.scss */
 .sativa-mision {
   padding: 80px 0px;
 }
 
-/* line 139, ../sass/main.scss */
+/* line 167, ../sass/main.scss */
 .bottom-banner {
   padding: 80px 0px;
   background: #fb9f8d;
   background: linear-gradient(180deg, #fb9f8d 0%, white 44%, #b8bdff 100%);
 }
 
-/* line 144, ../sass/main.scss */
+/* line 172, ../sass/main.scss */
 .sativa-foot {
   padding: 80px 0px;
   background: var(--gray-light-color);
