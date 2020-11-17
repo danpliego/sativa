@@ -187,69 +187,52 @@ a, button {
   }
 }
 
-.follow-btn {
-  width: 230px;
-  height: 49px;
-  left: 110px;
-  top: 48px;
-  border: 1px solid var(--body-color);
-  box-sizing: border-box;
-  color: #345c19;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  :hover {
-    color: #E1E4ED;
-    border: 1px solid var(--success-color);
-  }
-  @media (max-width: 576px) {
-    display: none;
-  }
-}
-
-.btn-outline-primary:hover {
-    background-color: transparent;
-    color: var(--body-light-color);
-    border: 1px solid var(--body-light-color);
-}
-
 .us-section {
-  h1 {
-    font-size: 47px;
-    line-height: 50px;
-  }
-  ul.circle {
-    list-style-type: circle;
-  }
-  background-image: 
-  url(http://danielpliego.com/sativa/web/sativa2x.png),
-  linear-gradient(0deg, rgba(184,189,255,1) 0%, rgba(255,255,255,1) 48%, rgba(165,213,166,1) 100%);
+  background-image: linear-gradient(0deg, rgba(184,189,255,1) 0%, rgba(255,255,255,1) 48%, rgba(165,213,166,1) 100%);
   background-repeat: no-repeat;
   background-position: bottom right; 
   background-size: contain;
-  position: relative;
-  padding: 80px 0px;
-  height: 100vh;
-  .follow-block {
-    padding: 15px;
-    position: absolute;
-    display: inline-flex;
-    bottom: 50px;
-    border-top: 1px solid var(--body-color);
-    border-bottom: 1px solid var(--body-color);
-    p {
-      width: 280px;
+  .us-content {
+    height: 100vh;
+    padding: 10vh 0 15vh;
+    position: relative;
+    overflow: hidden;
+    h1 {
+      font-size: 47px;
+      line-height: 50px;
     }
-    @media (max-width: 576px) {
+    ul.circle {
+      list-style-type: circle;
+    }
+    .us-image {
+      position: absolute;
+      bottom: 0;
+      right: -2vw;
+      max-width: 100%;
+      height: auto;
+    }
+    .follow-block {
+      padding: 15px;
+      position: absolute;
+      display: inline-flex;
+      bottom: 50px;
+      border-top: 1px solid var(--body-color);
+      border-bottom: 1px solid var(--body-color);
       p {
-        width: auto;
-        font-size: 14px;
+        width: 280px;
       }
-      max-width: 285px;
+      @media (max-width: 576px) {
+        p {
+          width: auto;
+          font-size: 14px;
+        }
+        max-width: 285px;
+      }
     }
   }
+  
+  
+  
   @media (max-width: 768px) { 
     
     height: 50vh;
@@ -326,3 +309,34 @@ a, button {
     display: block;
   }
 }
+
+
+.follow-btn {
+  width: 230px;
+  height: 49px;
+  left: 110px;
+  top: 48px;
+  border: 1px solid var(--body-color);
+  box-sizing: border-box;
+  color: #345c19;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  :hover {
+    color: #E1E4ED;
+    border: 1px solid var(--success-color);
+  }
+  @media (max-width: 576px) {
+    display: none;
+  }
+}
+
+.btn-outline-primary:hover {
+    background-color: transparent;
+    color: var(--body-light-color);
+    border: 1px solid var(--body-light-color);
+}
+
+

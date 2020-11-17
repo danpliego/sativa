@@ -256,6 +256,167 @@ a, button {
 }
 
 /* line 190, ../sass/main.scss */
+.us-section {
+  background-image: linear-gradient(0deg, #b8bdff 0%, white 48%, #a5d5a6 100%);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+}
+/* line 195, ../sass/main.scss */
+.us-section .us-content {
+  height: 100vh;
+  padding: 10vh 0 15vh;
+  position: relative;
+  overflow: hidden;
+}
+/* line 200, ../sass/main.scss */
+.us-section .us-content h1 {
+  font-size: 47px;
+  line-height: 50px;
+}
+/* line 204, ../sass/main.scss */
+.us-section .us-content ul.circle {
+  list-style-type: circle;
+}
+/* line 207, ../sass/main.scss */
+.us-section .us-content .us-image {
+  position: absolute;
+  bottom: 0;
+  right: -2vw;
+  max-width: 100%;
+  height: auto;
+}
+/* line 214, ../sass/main.scss */
+.us-section .us-content .follow-block {
+  padding: 15px;
+  position: absolute;
+  display: inline-flex;
+  bottom: 50px;
+  border-top: 1px solid var(--body-color);
+  border-bottom: 1px solid var(--body-color);
+}
+/* line 221, ../sass/main.scss */
+.us-section .us-content .follow-block p {
+  width: 280px;
+}
+@media (max-width: 576px) {
+  /* line 214, ../sass/main.scss */
+  .us-section .us-content .follow-block {
+    max-width: 285px;
+  }
+  /* line 225, ../sass/main.scss */
+  .us-section .us-content .follow-block p {
+    width: auto;
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 190, ../sass/main.scss */
+  .us-section {
+    height: 50vh;
+  }
+  /* line 239, ../sass/main.scss */
+  .us-section h1 {
+    font-size: 30px;
+    line-height: 33px;
+  }
+  /* line 243, ../sass/main.scss */
+  .us-section ul {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  /* line 190, ../sass/main.scss */
+  .us-section {
+    padding: 60px 0px;
+    height: 100vh;
+  }
+  /* line 250, ../sass/main.scss */
+  .us-section h1 {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  /* line 254, ../sass/main.scss */
+  .us-section ul {
+    margin-left: 15px;
+  }
+}
+
+/* line 260, ../sass/main.scss */
+.animated-banner {
+  padding: 60px 0px;
+  background-color: var(--gray-light-color);
+  font-family: 'halloweed';
+}
+/* line 264, ../sass/main.scss */
+.animated-banner .animation-track {
+  padding: .35em;
+}
+
+/* line 268, ../sass/main.scss */
+.promo-img {
+  background-color: white;
+}
+/* line 269, ../sass/main.scss */
+.promo-img .col-6 {
+  padding: 0;
+}
+
+/* line 274, ../sass/main.scss */
+.sativa-mision {
+  padding: 80px 0px;
+}
+/* line 276, ../sass/main.scss */
+.sativa-mision h1 {
+  font-size: 47px;
+  line-height: 50px;
+}
+@media (max-width: 768px) {
+  /* line 274, ../sass/main.scss */
+  .sativa-mision {
+    height: 30vh;
+  }
+  /* line 282, ../sass/main.scss */
+  .sativa-mision h1 {
+    font-size: 30px;
+    line-height: 33px;
+  }
+  /* line 286, ../sass/main.scss */
+  .sativa-mision p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  /* line 274, ../sass/main.scss */
+  .sativa-mision {
+    height: initial;
+  }
+}
+
+/* line 295, ../sass/main.scss */
+.bottom-banner {
+  padding: 80px 0px;
+  background: #fb9f8d;
+  background: linear-gradient(180deg, #fb9f8d 0%, white 44%, #b8bdff 100%);
+}
+/* line 296, ../sass/main.scss */
+.bottom-banner h2 {
+  font-family: 'headings';
+  font-size: 37px;
+  line-height: 40px;
+}
+
+/* line 305, ../sass/main.scss */
+.sativa-foot {
+  padding: 80px 0px;
+  background: var(--gray-light-color);
+}
+/* line 308, ../sass/main.scss */
+.sativa-foot .social a {
+  display: block;
+}
+
+/* line 314, ../sass/main.scss */
 .follow-btn {
   width: 230px;
   height: 49px;
@@ -269,170 +430,21 @@ a, button {
   align-items: center;
   justify-content: center;
 }
-/* line 203, ../sass/main.scss */
+/* line 327, ../sass/main.scss */
 .follow-btn :hover {
   color: #E1E4ED;
   border: 1px solid var(--success-color);
 }
 @media (max-width: 576px) {
-  /* line 190, ../sass/main.scss */
+  /* line 314, ../sass/main.scss */
   .follow-btn {
     display: none;
   }
 }
 
-/* line 212, ../sass/main.scss */
+/* line 336, ../sass/main.scss */
 .btn-outline-primary:hover {
   background-color: transparent;
   color: var(--body-light-color);
   border: 1px solid var(--body-light-color);
-}
-
-/* line 218, ../sass/main.scss */
-.us-section {
-  background-image: url(http://danielpliego.com/sativa/web/sativa2x.png), linear-gradient(0deg, #b8bdff 0%, white 48%, #a5d5a6 100%);
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: contain;
-  position: relative;
-  padding: 80px 0px;
-  height: 100vh;
-}
-/* line 219, ../sass/main.scss */
-.us-section h1 {
-  font-size: 47px;
-  line-height: 50px;
-}
-/* line 223, ../sass/main.scss */
-.us-section ul.circle {
-  list-style-type: circle;
-}
-/* line 235, ../sass/main.scss */
-.us-section .follow-block {
-  padding: 15px;
-  position: absolute;
-  display: inline-flex;
-  bottom: 50px;
-  border-top: 1px solid var(--body-color);
-  border-bottom: 1px solid var(--body-color);
-}
-/* line 242, ../sass/main.scss */
-.us-section .follow-block p {
-  width: 280px;
-}
-@media (max-width: 576px) {
-  /* line 235, ../sass/main.scss */
-  .us-section .follow-block {
-    max-width: 285px;
-  }
-  /* line 246, ../sass/main.scss */
-  .us-section .follow-block p {
-    width: auto;
-    font-size: 14px;
-  }
-}
-@media (max-width: 768px) {
-  /* line 218, ../sass/main.scss */
-  .us-section {
-    height: 50vh;
-  }
-  /* line 256, ../sass/main.scss */
-  .us-section h1 {
-    font-size: 30px;
-    line-height: 33px;
-  }
-  /* line 260, ../sass/main.scss */
-  .us-section ul {
-    font-size: 14px;
-  }
-}
-@media (max-width: 576px) {
-  /* line 218, ../sass/main.scss */
-  .us-section {
-    padding: 60px 0px;
-    height: 100vh;
-  }
-  /* line 267, ../sass/main.scss */
-  .us-section h1 {
-    font-size: 20px;
-    line-height: 23px;
-  }
-  /* line 271, ../sass/main.scss */
-  .us-section ul {
-    margin-left: 15px;
-  }
-}
-
-/* line 277, ../sass/main.scss */
-.animated-banner {
-  padding: 60px 0px;
-  background-color: var(--gray-light-color);
-  font-family: 'halloweed';
-}
-/* line 281, ../sass/main.scss */
-.animated-banner .animation-track {
-  padding: .35em;
-}
-
-/* line 285, ../sass/main.scss */
-.promo-img {
-  background-color: white;
-}
-/* line 286, ../sass/main.scss */
-.promo-img .col-6 {
-  padding: 0;
-}
-
-/* line 291, ../sass/main.scss */
-.sativa-mision {
-  padding: 80px 0px;
-}
-/* line 293, ../sass/main.scss */
-.sativa-mision h1 {
-  font-size: 47px;
-  line-height: 50px;
-}
-@media (max-width: 768px) {
-  /* line 291, ../sass/main.scss */
-  .sativa-mision {
-    height: 30vh;
-  }
-  /* line 299, ../sass/main.scss */
-  .sativa-mision h1 {
-    font-size: 30px;
-    line-height: 33px;
-  }
-  /* line 303, ../sass/main.scss */
-  .sativa-mision p {
-    font-size: 14px;
-  }
-}
-@media (max-width: 576px) {
-  /* line 291, ../sass/main.scss */
-  .sativa-mision {
-    height: initial;
-  }
-}
-
-/* line 312, ../sass/main.scss */
-.bottom-banner {
-  padding: 80px 0px;
-  background: #fb9f8d;
-  background: linear-gradient(180deg, #fb9f8d 0%, white 44%, #b8bdff 100%);
-}
-/* line 313, ../sass/main.scss */
-.bottom-banner h2 {
-  font-family: 'headings';
-  font-size: 37px;
-  line-height: 40px;
-}
-
-/* line 322, ../sass/main.scss */
-.sativa-foot {
-  padding: 80px 0px;
-  background: var(--gray-light-color);
-}
-/* line 325, ../sass/main.scss */
-.sativa-foot .social a {
-  display: block;
 }
