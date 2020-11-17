@@ -85,31 +85,121 @@ body {
   display: none;
 }
 
+a, button {
+  transition: all 0.15s ease-in-out;
+}
+
 // Page layout
 
+.sativa-header-container {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(0deg, rgba(184,189,255,0) 0%, rgba(184,189,255,1) 95%);
+  z-index: 0;
+
+  .sativa-header {
+    display: flex;
+    padding: 20px 0px;
+
+    .header-block {
+      flex: 1;
+      align-self: center;
+      align-content: center;
+    }
+    
+    @media (max-width: 576px) {
+      a {
+        display: none;
+      }
+    }
+  }
+}
+
+.hero {
+  background-image: linear-gradient(0deg, rgba(165,213,166,1) 0%, rgba(255,255,255,1) 44%, rgba(184,189,255,1) 100%);
+  background-size: contain;
+  background-position: bottom right; 
+  background-repeat: no-repeat;
+  margin: 0px;
+
+  .logo {
+    display: block;
+
+    &:hover {
+      transform: translate(0px, -2px);
+    }
+  }
+
+  .hero-content {
+    padding: 10vh 0 15vh;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--body-color);
+
+    .sun-icon {
+      position: absolute;
+      margin-top: 2px;
+      left: 15px;
+    }
+
+    h1 {
+      text-indent: 5rem;
+    }
+     
+    .hero-image {
+      position: absolute;
+      top: 0;
+      right: -7vw;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
 .sativa-headings {
-  font-size: 55px;
-  border-bottom: 1px solid var(--body-color);
+  font-size: 50px;
+
   .follow-btn {
     display: none;
+  }
+  
+  h1 {
+    font-size: 75px;
+    line-height: 1.2;
+  }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 50px;
+      line-height: 53px;
+    } 
+    p {
+      font-size: 14px;
+    }
   }
   @media (max-width: 576px) {
     .follow-btn {
       display: inline;
     } 
+    h1 {
+      font-size: 33px;
+      line-height: 30px;
+    }
   }
 }
 
-
 .follow-btn {
-    width: 230px;
-    height: 49px;
-    left: 110px;
-    top: 48px;
-    border: 1px solid var(--body-color);
-    box-sizing: border-box;
-    color: #345c19;
-    border-radius: 8px;
+  width: 230px;
+  height: 49px;
+  left: 110px;
+  top: 48px;
+  border: 1px solid var(--body-color);
+  box-sizing: border-box;
+  color: #345c19;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   :hover {
     color: #E1E4ED;
     border: 1px solid var(--success-color);
@@ -123,62 +213,6 @@ body {
     background-color: transparent;
     color: var(--body-light-color);
     border: 1px solid var(--body-light-color);
-}
-
-.sativa-header {
-  display: inline-flex;
-  padding: 20px 0px;
-  background: rgb(184,189,255);
-  background: linear-gradient(0deg, rgba(184,189,255,1) 0%, rgba(184,189,255,1) 100%);
-  .header-block {
-    flex: 1;
-    align-self: center;
-    align-content: center;
-  }
-  @media (max-width: 576px) {
-    a {
-      display: none;
-    }
-  }
-}
-
-.jumbotron {
-  background-image: 
-  url(http://danielpliego.com/sativa/web/jumbo-sativa.png),
-  linear-gradient(0deg, rgba(165,213,166,1) 0%, rgba(255,255,255,1) 44%, rgba(184,189,255,1) 100%);
-  background-size: contain;
-  background-position: bottom right; 
-  background-repeat: no-repeat;
-  margin: 0px;
-  height: 90vh;
-  @media (max-width: 768px) {
-    height: 40vh;
-  }
-  @media (max-width: 576px) {
-    height: 50vh;
-  }
-}
-
-.sativa-headings {
-  h1 {
-    font-size: 80px;
-    line-height: 83px;
-  }
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 50px;
-      line-height: 53px;
-    } 
-    p {
-      font-size: 14px;
-    }
-  }
-  @media (max-width: 576px) {
-    h1 {
-      font-size: 33px;
-      line-height: 30px;
-    }
-  }
 }
 
 .us-section {
