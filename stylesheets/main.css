@@ -220,7 +220,7 @@ body a {
   background-position: bottom right;
   background-repeat: no-repeat;
   margin: 0px;
-  height: 80vh;
+  height: 90vh;
 }
 @media (max-width: 768px) {
   /* line 145, ../sass/main.scss */
