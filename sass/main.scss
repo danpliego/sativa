@@ -274,10 +274,15 @@ a, button {
     }
   }
 }
-
 .promo-img {
-  .col-6 {
-    padding: 0;
+  img {
+    vertical-align: bottom;
+  }
+}
+//name animated to make later an animated version
+.animated-banner {
+  .halloweed-promo {
+    vertical-align: bottom;
   }
 }
 .sativa-mision {
