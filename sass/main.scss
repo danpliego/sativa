@@ -212,6 +212,9 @@ a, button {
     padding: 10vh 0 15vh;
     position: relative;
     overflow: hidden;
+    @media (max-width: 576px) {
+      height: 70vh;
+    }
     h1 {
       font-size: 37px;
       line-height: 40px;
@@ -229,7 +232,8 @@ a, button {
         width: 300px;
       }
       @media (max-width: 576px) {
-        bottom: 145px;
+        bottom: 15%;
+        right: 1vw;
       }
     }
     .follow-block {
@@ -247,7 +251,9 @@ a, button {
           width: auto;
           font-size: 14px;
         }
-        max-width: 285px;
+        max-width: 100%;
+        z-index: 1;
+        background-color: var(--gray-color,0.3);
       }
     }
     @media (max-width: 768px) { 
