@@ -6,7 +6,7 @@
   font-style: normal;
   font-size: 55px;
   font-weight: 500;
-  src: url('../fonts/Ogg-Regular.otf');
+  src: url('../fonts/Ogg-Roman.woff');
 }
 
 @font-face {
@@ -45,6 +45,7 @@ html, body, {
 }
 
 body {
+  
   background: rgb(251,159,141);
   background: linear-gradient(0deg, rgba(251,159,141,1) 0%, rgba(255,255,255,1) 48%, rgba(184,189,255,1) 100%);
   margin: 0;
@@ -179,7 +180,7 @@ a, button {
   }
   
   h1 {
-    font-size: 75px;
+    font-size: 70px;
     line-height: 1.2;
   }
   @media (max-width: 768px) {
@@ -224,16 +225,17 @@ a, button {
     }
     .us-image {
       position: absolute;
+      left: 50%;
       bottom: 0;
-      right: -2vw;
       max-width: 100%;
       height: auto;
-      @media (max-width: 768px) {
-        width: 300px;
+      @media (min-width: 768px) {
+        left: 64%;
+        max-width: 270px;
       }
       @media (max-width: 576px) {
         bottom: 15%;
-        right: 1vw;
+        left: unset;
       }
     }
     .follow-block {
@@ -251,7 +253,9 @@ a, button {
           width: auto;
           font-size: 14px;
         }
-        max-width: 100%;
+        display: block;
+        text-align: center;
+        width: 100%;
         z-index: 1;
         background-color: var(--gray-color,0.3);
       }
@@ -356,10 +360,21 @@ a, button {
   }
 }
 
-.btn-outline-primary:hover {
-    background-color: transparent;
-    color: var(--body-light-color);
-    border: 1px solid var(--body-light-color);
+.btn-outline-primary {
+  color: var(--body-color);
+  border-color: var(--body-color);
+&:hover {
+    background-color: var(--primary-color);
+    color: var(--body-color);
+    border: 1px solid var(--body-color);
+  }
+  &:active {
+    background-color: var(--primary-color)!important;
+  }
 }
 
 
+///helpernoob
+.bold {
+  font-weight: bold;
+}
