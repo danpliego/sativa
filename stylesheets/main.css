@@ -292,7 +292,7 @@ a, button {
 }
 /* line 211, ../sass/main.scss */
 .us-section .us-content {
-  height: 100vh;
+  min-height: 600px;
   padding: 10vh 0 15vh;
   position: relative;
   overflow: hidden;

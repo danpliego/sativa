@@ -209,7 +209,7 @@ a, button {
   background-position: bottom right; 
   background-size: contain;
   .us-content {
-    height: 100vh;
+    min-height: 600px;
     padding: 10vh 0 15vh;
     position: relative;
     overflow: hidden;
