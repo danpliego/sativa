@@ -324,43 +324,55 @@ h1 {
 }
 
 /* line 239, ../sass/main.scss */
+.us-image {
+  width: 300px;
+}
+@media (min-width: 768px) {
+  /* line 239, ../sass/main.scss */
+  .us-image {
+    width: 550px;
+    height: auto;
+  }
+}
+
+/* line 248, ../sass/main.scss */
 .promo-img img {
   vertical-align: bottom;
 }
 
-/* line 245, ../sass/main.scss */
+/* line 254, ../sass/main.scss */
 .animated-banner .halloweed-promo {
   vertical-align: bottom;
 }
 
-/* line 250, ../sass/main.scss */
+/* line 259, ../sass/main.scss */
 .bottom-banner {
   padding: 80px 0px;
   background: #fb9f8d;
   background: linear-gradient(180deg, #fb9f8d 0%, white 44%, #b8bdff 100%);
 }
-/* line 251, ../sass/main.scss */
+/* line 260, ../sass/main.scss */
 .bottom-banner h2 {
   font-size: 37px;
 }
 
-/* line 258, ../sass/main.scss */
+/* line 267, ../sass/main.scss */
 .sativa-foot {
   padding: 80px 0px;
   background: var(--gray-light-color);
 }
-/* line 261, ../sass/main.scss */
+/* line 270, ../sass/main.scss */
 .sativa-foot .social a {
   display: block;
 }
 @media (max-width: 576px) {
-  /* line 258, ../sass/main.scss */
+  /* line 267, ../sass/main.scss */
   .sativa-foot {
     text-align: center;
   }
 }
 
-/* line 270, ../sass/main.scss */
+/* line 279, ../sass/main.scss */
 .follow-btn {
   width: 230px;
   height: 49px;
@@ -374,42 +386,42 @@ h1 {
   align-items: center;
   justify-content: center;
 }
-/* line 283, ../sass/main.scss */
+/* line 292, ../sass/main.scss */
 .follow-btn :hover {
   color: #E1E4ED;
   border: 1px solid var(--success-color);
 }
 @media (max-width: 576px) {
-  /* line 270, ../sass/main.scss */
+  /* line 279, ../sass/main.scss */
   .follow-btn {
     display: none;
   }
 }
 
-/* line 292, ../sass/main.scss */
+/* line 301, ../sass/main.scss */
 .btn-outline-primary {
   color: var(--body-color);
   border-color: var(--body-color);
 }
-/* line 295, ../sass/main.scss */
+/* line 304, ../sass/main.scss */
 .btn-outline-primary:hover {
   background-color: var(--primary-color);
   color: var(--body-color);
   border: 1px solid var(--body-color);
 }
-/* line 300, ../sass/main.scss */
+/* line 309, ../sass/main.scss */
 .btn-outline-primary:active {
   background-color: var(--primary-color) !important;
 }
 
 @media (max-width: 576px) {
-  /* line 307, ../sass/main.scss */
+  /* line 316, ../sass/main.scss */
   .sativa-mision h1, .sativa-mision p {
     text-align: center;
   }
 }
 
-/* line 315, ../sass/main.scss */
+/* line 324, ../sass/main.scss */
 .bold {
   font-weight: bold;
 }

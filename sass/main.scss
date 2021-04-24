@@ -235,6 +235,15 @@ h1 {
     }
   }
 }
+
+.us-image {
+  @media (min-width: 768px) {
+    width: 550px;
+    height: auto;
+  }
+  width: 300px;
+}
+
 .promo-img {
   img {
     vertical-align: bottom;
