@@ -64,6 +64,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 @font-face {
+  font-family: "Cooper";
+  font-weight: 500;
+  src: url("../fonts/Cooper.ttf");
+}
+@font-face {
+  font-family: "Cooper Italic";
+  font-weight: 500;
+  src: url("../fonts/Cooper-italic.otf");
+}
+@font-face {
   font-family: "headings";
   font-style: normal;
   font-size: 55px;
@@ -83,19 +93,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: 300;
   src: url("../fonts/BananaGrotesk-Regular.otf");
 }
-/* line 30, ../sass/main.scss */
+/* line 42, ../sass/main.scss */
 *, ::before, ::after {
   box-sizing: border-box;
 }
 
-/* line 34, ../sass/main.scss */
+/* line 46, ../sass/main.scss */
 html {
   display: flex;
   min-height: 100%;
   width: 100%;
 }
 
-/* line 40, ../sass/main.scss */
+/* line 52, ../sass/main.scss */
 html, body {
   font-family: 'paragraph';
   font-size: 17px;
@@ -103,7 +113,7 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 47, ../sass/main.scss */
+/* line 59, ../sass/main.scss */
 body {
   background: #fb9f8d;
   background: linear-gradient(0deg, #fb9f8d 0%, white 48%, #b8bdff 100%);
@@ -111,7 +121,7 @@ body {
   font-family: "paragraph", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 400;
   line-height: 1.5;
-  color: var(--body-color);
+  color: #000;
   text-align: left;
   width: 100%;
   height: 100%;
@@ -119,16 +129,12 @@ body {
   overscroll-behavior-y: none;
   box-sizing: border-box;
 }
-/* line 62, ../sass/main.scss */
-body h1 {
-  font-family: 'headings';
-}
-/* line 66, ../sass/main.scss */
+/* line 74, ../sass/main.scss */
 body a {
   color: var(--body-color);
 }
 
-/* line 72, ../sass/main.scss */
+/* line 80, ../sass/main.scss */
 :root {
   --body-color: #345C19;
   --body-light-color: #6CAD67;
@@ -138,94 +144,124 @@ body a {
   --success-color: #41D9A6;
 }
 
-/* line 81, ../sass/main.scss */
+/* line 89, ../sass/main.scss */
 .btn:focus {
   box-shadow: none !important;
 }
 
-/* line 86, ../sass/main.scss */
+/* line 94, ../sass/main.scss */
 .dropdown-toggle::after {
   display: none;
 }
 
-/* line 90, ../sass/main.scss */
+/* line 98, ../sass/main.scss */
 a, button {
   transition: all 0.15s ease-in-out;
 }
 
-/* line 96, ../sass/main.scss */
-.sativa-header-container {
-  position: sticky;
-  top: 0;
-  background: linear-gradient(0deg, rgba(184, 189, 255, 0) 0%, #b8bdff 95%);
-  z-index: 0;
-}
 /* line 102, ../sass/main.scss */
-.sativa-header-container .sativa-header {
-  display: flex;
-  padding: 20px 0px;
-}
-/* line 106, ../sass/main.scss */
-.sativa-header-container .sativa-header .header-block {
-  flex: 1;
-  align-self: center;
-  align-content: center;
+h1, h2, h3, h4, h5, h6, .cooper {
+  font-family: 'Cooper', sans-serif;
+  line-height: 120%;
 }
 
-/* line 115, ../sass/main.scss */
+/* line 107, ../sass/main.scss */
+h1 {
+  font-size: 36px;
+}
+@media (max-width: 556px) {
+  /* line 107, ../sass/main.scss */
+  h1 {
+    font-size: 24px;
+  }
+}
+
+/* line 114, ../sass/main.scss */
+.btn {
+  border-radius: 57px;
+  width: 100%;
+  height: 57px;
+  border: 2px solid #000;
+  box-shadow: 0 4px 0 #000;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cooper Italic';
+  font-size: 21px;
+}
+/* line 127, ../sass/main.scss */
+.btn.btn-orange {
+  background: #F89F8F;
+}
+/* line 130, ../sass/main.scss */
+.btn.btn-green {
+  background: #C9E0BA;
+}
+/* line 133, ../sass/main.scss */
+.btn.btn-purple {
+  background: #BFADFF;
+}
+/* line 136, ../sass/main.scss */
+.btn.btn-yellow {
+  background: #FFEE90;
+}
+
+/* line 141, ../sass/main.scss */
+.follow-block {
+  margin-top: 5rem;
+}
+
+/* line 145, ../sass/main.scss */
 .hero {
   background-image: linear-gradient(0deg, #a5d5a6 0%, white 44%, #b8bdff 100%);
   background-size: contain;
   background-position: bottom right;
   background-repeat: no-repeat;
   margin: 0px;
+  text-align: center;
+  padding: 1rem;
 }
-/* line 122, ../sass/main.scss */
+/* line 154, ../sass/main.scss */
+.hero .container {
+  max-width: 600px;
+}
+/* line 158, ../sass/main.scss */
 .hero .logo {
   display: block;
 }
-/* line 125, ../sass/main.scss */
+/* line 161, ../sass/main.scss */
 .hero .logo:hover {
   transform: translate(0px, -2px);
 }
-/* line 130, ../sass/main.scss */
+/* line 166, ../sass/main.scss */
 .hero .hero-content {
   padding: 10vh 0 15vh;
   position: relative;
   overflow: hidden;
   border-bottom: 1px solid var(--body-color);
 }
-/* line 136, ../sass/main.scss */
+/* line 172, ../sass/main.scss */
 .hero .hero-content .sun-icon {
   position: absolute;
   margin-top: 2px;
   left: 15px;
 }
 @media (max-width: 768px) {
-  /* line 136, ../sass/main.scss */
+  /* line 172, ../sass/main.scss */
   .hero .hero-content .sun-icon {
     width: 60px;
     margin-top: -8px;
   }
 }
 @media (max-width: 576px) {
-  /* line 136, ../sass/main.scss */
+  /* line 172, ../sass/main.scss */
   .hero .hero-content .sun-icon {
     width: 50px;
     margin-top: -19px;
   }
 }
-/* line 150, ../sass/main.scss */
-.hero .hero-content h1 {
-  text-indent: 5rem;
-}
-@media (max-width: 576px) {
-  /* line 150, ../sass/main.scss */
-  .hero .hero-content h1 {
-    text-indent: 3rem;
-  }
-}
-/* line 157, ../sass/main.scss */
+/* line 186, ../sass/main.scss */
 .hero .hero-content .hero-image {
   position: absolute;
   top: 0;
@@ -234,107 +270,35 @@ a, button {
   height: auto;
 }
 @media (max-width: 768px) {
-  /* line 157, ../sass/main.scss */
+  /* line 186, ../sass/main.scss */
   .hero .hero-content .hero-image {
     width: 300px;
   }
 }
 @media (max-width: 576px) {
-  /* line 157, ../sass/main.scss */
+  /* line 186, ../sass/main.scss */
   .hero .hero-content .hero-image {
     top: 200px;
     width: 160px;
   }
 }
 
-/* line 175, ../sass/main.scss */
-.sativa-headings {
-  font-size: 50px;
-}
-/* line 178, ../sass/main.scss */
-.sativa-headings .follow-btn {
-  display: none;
-}
-/* line 182, ../sass/main.scss */
-.sativa-headings h1 {
-  font-size: 70px;
-  line-height: 1.2;
-}
-@media (max-width: 768px) {
-  /* line 187, ../sass/main.scss */
-  .sativa-headings h1 {
-    font-size: 50px;
-    line-height: 53px;
-  }
-  /* line 191, ../sass/main.scss */
-  .sativa-headings p {
-    font-size: 14px;
-  }
-}
-@media (max-width: 576px) {
-  /* line 196, ../sass/main.scss */
-  .sativa-headings .follow-btn {
-    display: inline;
-  }
-  /* line 199, ../sass/main.scss */
-  .sativa-headings h1 {
-    font-size: 33px;
-    line-height: 30px;
-  }
+/* line 204, ../sass/main.scss */
+.circle {
+  list-style-type: circle;
+  padding-left: 3rem;
+  font-size: 18px;
+  margin-top: 2rem;
 }
 
-/* line 206, ../sass/main.scss */
+/* line 211, ../sass/main.scss */
 .us-section {
   background-image: linear-gradient(0deg, #b8bdff 0%, white 48%, #a5d5a6 100%);
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: contain;
 }
-/* line 211, ../sass/main.scss */
-.us-section .us-content {
-  min-height: 600px;
-  padding: 10vh 0 15vh;
-  position: relative;
-  overflow: hidden;
-}
-@media (max-width: 576px) {
-  /* line 211, ../sass/main.scss */
-  .us-section .us-content {
-    height: 70vh;
-  }
-}
-/* line 219, ../sass/main.scss */
-.us-section .us-content h1 {
-  font-size: 37px;
-  line-height: 40px;
-}
-/* line 223, ../sass/main.scss */
-.us-section .us-content ul.circle {
-  list-style-type: circle;
-}
-/* line 226, ../sass/main.scss */
-.us-section .us-content .us-image {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  max-width: 100%;
-  height: auto;
-}
-@media (min-width: 768px) {
-  /* line 226, ../sass/main.scss */
-  .us-section .us-content .us-image {
-    left: 64%;
-    max-width: 270px;
-  }
-}
-@media (max-width: 576px) {
-  /* line 226, ../sass/main.scss */
-  .us-section .us-content .us-image {
-    bottom: 15%;
-    left: unset;
-  }
-}
-/* line 241, ../sass/main.scss */
+/* line 217, ../sass/main.scss */
 .us-section .us-content .follow-block {
   padding: 15px;
   position: absolute;
@@ -343,12 +307,8 @@ a, button {
   border-top: 1px solid var(--body-color);
   border-bottom: 1px solid var(--body-color);
 }
-/* line 248, ../sass/main.scss */
-.us-section .us-content .follow-block p {
-  width: 280px;
-}
 @media (max-width: 576px) {
-  /* line 241, ../sass/main.scss */
+  /* line 217, ../sass/main.scss */
   .us-section .us-content .follow-block {
     display: block;
     text-align: center;
@@ -356,115 +316,51 @@ a, button {
     z-index: 1;
     background-color: var(--gray-color, 0.3);
   }
-  /* line 252, ../sass/main.scss */
+  /* line 225, ../sass/main.scss */
   .us-section .us-content .follow-block p {
     width: auto;
     font-size: 14px;
   }
 }
-@media (max-width: 768px) {
-  /* line 211, ../sass/main.scss */
-  .us-section .us-content {
-    height: 50vh;
-  }
-  /* line 266, ../sass/main.scss */
-  .us-section .us-content h1 {
-    font-size: 30px;
-    line-height: 33px;
-  }
-  /* line 270, ../sass/main.scss */
-  .us-section .us-content ul {
-    font-size: 14px;
-  }
-}
-@media (max-width: 576px) {
-  /* line 211, ../sass/main.scss */
-  .us-section .us-content {
-    padding: 60px 0px;
-    height: 100vh;
-  }
-  /* line 277, ../sass/main.scss */
-  .us-section .us-content h1 {
-    font-size: 20px;
-    line-height: 23px;
-  }
-  /* line 281, ../sass/main.scss */
-  .us-section .us-content ul {
-    margin-left: 15px;
-  }
-}
 
-/* line 288, ../sass/main.scss */
+/* line 239, ../sass/main.scss */
 .promo-img img {
   vertical-align: bottom;
 }
 
-/* line 294, ../sass/main.scss */
+/* line 245, ../sass/main.scss */
 .animated-banner .halloweed-promo {
   vertical-align: bottom;
 }
 
-/* line 298, ../sass/main.scss */
-.sativa-mision {
-  padding: 80px 0px;
-}
-/* line 300, ../sass/main.scss */
-.sativa-mision h1 {
-  font-size: 47px;
-  line-height: 50px;
-}
-@media (max-width: 768px) {
-  /* line 298, ../sass/main.scss */
-  .sativa-mision {
-    padding: 50px 0px;
-  }
-  /* line 306, ../sass/main.scss */
-  .sativa-mision h1 {
-    font-size: 30px;
-    line-height: 33px;
-  }
-  /* line 310, ../sass/main.scss */
-  .sativa-mision p {
-    font-size: 14px;
-  }
-}
-@media (max-width: 576px) {
-  /* line 298, ../sass/main.scss */
-  .sativa-mision {
-    height: initial;
-  }
-}
-
-/* line 319, ../sass/main.scss */
+/* line 250, ../sass/main.scss */
 .bottom-banner {
   padding: 80px 0px;
   background: #fb9f8d;
   background: linear-gradient(180deg, #fb9f8d 0%, white 44%, #b8bdff 100%);
 }
-/* line 320, ../sass/main.scss */
+/* line 251, ../sass/main.scss */
 .bottom-banner h2 {
-  font-family: 'headings';
   font-size: 37px;
-  line-height: 40px;
 }
 
-/* line 329, ../sass/main.scss */
+/* line 258, ../sass/main.scss */
 .sativa-foot {
   padding: 80px 0px;
   background: var(--gray-light-color);
 }
-/* line 332, ../sass/main.scss */
+/* line 261, ../sass/main.scss */
 .sativa-foot .social a {
   display: block;
 }
 @media (max-width: 576px) {
-  /* line 329, ../sass/main.scss */
+  /* line 258, ../sass/main.scss */
   .sativa-foot {
     text-align: center;
   }
 }
 
-/* line 341, ../sass/main.scss */
+/* line 270, ../sass/main.scss */
 .follow-btn {
   width: 230px;
   height: 49px;
@@ -478,35 +374,42 @@ a, button {
   align-items: center;
   justify-content: center;
 }
-/* line 354, ../sass/main.scss */
+/* line 283, ../sass/main.scss */
 .follow-btn :hover {
   color: #E1E4ED;
   border: 1px solid var(--success-color);
 }
 @media (max-width: 576px) {
-  /* line 341, ../sass/main.scss */
+  /* line 270, ../sass/main.scss */
   .follow-btn {
     display: none;
   }
 }
 
-/* line 363, ../sass/main.scss */
+/* line 292, ../sass/main.scss */
 .btn-outline-primary {
   color: var(--body-color);
   border-color: var(--body-color);
 }
-/* line 366, ../sass/main.scss */
+/* line 295, ../sass/main.scss */
 .btn-outline-primary:hover {
   background-color: var(--primary-color);
   color: var(--body-color);
   border: 1px solid var(--body-color);
 }
-/* line 371, ../sass/main.scss */
+/* line 300, ../sass/main.scss */
 .btn-outline-primary:active {
   background-color: var(--primary-color) !important;
 }
 
-/* line 378, ../sass/main.scss */
+@media (max-width: 576px) {
+  /* line 307, ../sass/main.scss */
+  .sativa-mision h1, .sativa-mision p {
+    text-align: center;
+  }
+}
+
+/* line 315, ../sass/main.scss */
 .bold {
   font-weight: bold;
 }

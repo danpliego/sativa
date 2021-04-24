@@ -2,6 +2,18 @@
 @import "compass/reset";
 
 @font-face {
+  font-family: "Cooper";
+  font-weight: 500;
+  src: url('../fonts/Cooper.ttf');
+}
+
+@font-face {
+  font-family: "Cooper Italic";
+  font-weight: 500;
+  src: url('../fonts/Cooper-italic.otf');
+}
+
+@font-face {
   font-family: "headings";
   font-style: normal;
   font-size: 55px;
@@ -45,24 +57,20 @@ html, body, {
 }
 
 body {
-  
   background: rgb(251,159,141);
   background: linear-gradient(0deg, rgba(251,159,141,1) 0%, rgba(255,255,255,1) 48%, rgba(184,189,255,1) 100%);
   margin: 0;
   font-family: "paragraph", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 400;
   line-height: 1.5;
-  color: var(--body-color);
+  color: #000;
   text-align: left;
   width: 100%;
   height: 100%;
   overflow-x: hidden;
   overscroll-behavior-y: none;
   box-sizing: border-box;
-  h1 {
-    font-family: 'headings';
 
-  }
    a {
      color: var(--body-color);
    }
@@ -91,25 +99,47 @@ a, button {
   transition: all 0.15s ease-in-out;
 }
 
-// Page layout
+h1, h2, h3, h4, h5, h6, .cooper {
+  font-family: 'Cooper', sans-serif;
+  line-height: 120%;
+}
 
-.sativa-header-container {
-  position: sticky;
-  top: 0;
-  background: linear-gradient(0deg, rgba(184,189,255,0) 0%, rgba(184,189,255,1) 95%);
-  z-index: 0;
-
-  .sativa-header {
-    display: flex;
-    padding: 20px 0px;
-
-    .header-block {
-      flex: 1;
-      align-self: center;
-      align-content: center;
-    }
-    
+h1 {
+  font-size: 36px;
+  @media (max-width: 556px) {
+    font-size: 24px;
   }
+}
+
+.btn {
+  border-radius: 57px;
+  width: 100%;
+  height: 57px;
+  border: 2px solid #000;
+  box-shadow: 0 4px 0 #000;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cooper Italic';
+  font-size: 21px;
+
+  &.btn-orange {
+    background: #F89F8F;
+  }
+  &.btn-green {
+    background: #C9E0BA;
+  }
+  &.btn-purple {
+    background: #BFADFF;
+  }
+  &.btn-yellow {
+    background: #FFEE90;
+  }
+}
+
+.follow-block {
+  margin-top: 5rem;
 }
 
 .hero {
@@ -118,6 +148,12 @@ a, button {
   background-position: bottom right; 
   background-repeat: no-repeat;
   margin: 0px;
+  text-align: center;
+  padding: 1rem;
+
+  .container {
+    max-width: 600px;
+  }
 
   .logo {
     display: block;
@@ -146,13 +182,6 @@ a, button {
         margin-top: -19px;
       }
     }
-
-    h1 {
-      text-indent: 5rem;
-      @media (max-width: 576px) {
-        text-indent: 3rem;
-      }
-    }
      
     .hero-image {
       position: absolute;
@@ -172,35 +201,11 @@ a, button {
   }
 }
 
-.sativa-headings {
-  font-size: 50px;
-
-  .follow-btn {
-    display: none;
-  }
-  
-  h1 {
-    font-size: 70px;
-    line-height: 1.2;
-  }
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 50px;
-      line-height: 53px;
-    } 
-    p {
-      font-size: 14px;
-    }
-  }
-  @media (max-width: 576px) {
-    .follow-btn {
-      display: inline;
-    } 
-    h1 {
-      font-size: 33px;
-      line-height: 30px;
-    }
-  }
+.circle {
+  list-style-type: circle;
+  padding-left: 3rem;
+  font-size: 18px;
+  margin-top: 2rem;
 }
 
 .us-section {
@@ -209,35 +214,6 @@ a, button {
   background-position: bottom right; 
   background-size: contain;
   .us-content {
-    min-height: 600px;
-    padding: 10vh 0 15vh;
-    position: relative;
-    overflow: hidden;
-    @media (max-width: 576px) {
-      height: 70vh;
-    }
-    h1 {
-      font-size: 37px;
-      line-height: 40px;
-    }
-    ul.circle {
-      list-style-type: circle;
-    }
-    .us-image {
-      position: absolute;
-      left: 50%;
-      bottom: 0;
-      max-width: 100%;
-      height: auto;
-      @media (min-width: 768px) {
-        left: 64%;
-        max-width: 270px;
-      }
-      @media (max-width: 576px) {
-        bottom: 15%;
-        left: unset;
-      }
-    }
     .follow-block {
       padding: 15px;
       position: absolute;
@@ -245,9 +221,6 @@ a, button {
       bottom: 50px;
       border-top: 1px solid var(--body-color);
       border-bottom: 1px solid var(--body-color);
-      p {
-        width: 280px;
-      }
       @media (max-width: 576px) {
         p {
           width: auto;
@@ -258,28 +231,6 @@ a, button {
         width: 100%;
         z-index: 1;
         background-color: var(--gray-color,0.3);
-      }
-    }
-    @media (max-width: 768px) { 
-    
-      height: 50vh;
-      h1 {
-        font-size: 30px;
-        line-height: 33px;
-      }
-      ul {
-        font-size: 14px;
-      }
-    }
-    @media (max-width: 576px) {
-      padding: 60px 0px;
-      height: 100vh;
-      h1 {
-        font-size: 20px;
-        line-height: 23px;
-      }
-      ul {
-        margin-left: 15px;
       }
     }
   }
@@ -295,32 +246,10 @@ a, button {
     vertical-align: bottom;
   }
 }
-.sativa-mision {
-  padding: 80px 0px;
-  h1 {
-    font-size: 47px;
-    line-height: 50px;
-  }
-  @media (max-width: 768px){ 
-    padding: 50px 0px;
-    h1 {
-      font-size: 30px;
-      line-height: 33px;
-    }
-    p {
-      font-size: 14px;
-    }
-  }
-  @media (max-width: 576px) {
-    height: initial;
-  }
-}
 
 .bottom-banner {
   h2 {
-    font-family: 'headings';
     font-size: 37px;
-    line-height: 40px;
   }
   padding: 80px 0px;
   background: rgb(251,159,141);
@@ -370,6 +299,14 @@ a, button {
   }
   &:active {
     background-color: var(--primary-color)!important;
+  }
+}
+
+.sativa-mision {
+  @media (max-width: 576px ) {
+    h1, p {
+      text-align: center;
+    }
   }
 }
 
