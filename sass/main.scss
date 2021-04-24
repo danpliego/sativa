@@ -124,6 +124,10 @@ h1 {
   font-family: 'Cooper Italic';
   font-size: 21px;
 
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+
   &.btn-orange {
     background: #F89F8F;
   }
