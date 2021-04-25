@@ -332,7 +332,7 @@ h1 {
 /* line 243, ../sass/main.scss */
 .us-image {
   width: 100%;
-  height: auto;
+  height: 333px;
 }
 @media (min-width: 768px) {
   /* line 243, ../sass/main.scss */
