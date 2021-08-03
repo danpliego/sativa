@@ -71,6 +71,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-postcss`,
     },
-    
+    {
+      resolve: `gatsby-source-shopify`,
+      options: {
+        // The domain name of your Shopify shop.
+        storeUrl: `sativamx.myshopify.com`,
+        // The storefront access token
+        password: `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`,
+      },
+    },
   ],
 };

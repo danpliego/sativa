@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="section section-gradient text-center">
       <div className="mb-3">
         <img
-          alt="La Hora Sat"
+          alt="Sativa"
           width="70"
           src={logo}
           style={{ display: "inline-block" }}

@@ -1,8 +1,6 @@
 import * as React from "react";
-import Cursos from "../components/cursos";
 import Layout from "../components/layout";
 import Redes from "../images/we_are_sativa.png";
-import Asesorias from "../components/asesorias";
 import Tienda from "../components/tienda";
 
 // markup
