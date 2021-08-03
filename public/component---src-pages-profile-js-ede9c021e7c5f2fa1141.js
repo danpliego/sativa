@@ -1,2 +1,0 @@
-(self.webpackChunkla_hora_sat=self.webpackChunkla_hora_sat||[]).push([[486],{5826:function(e,l,a){"use strict";a.r(l);var n=a(7294);l.default=function(){return n.createElement(n.Fragment,null,n.createElement("h1",null,"Your profile"),n.createElement("ul",null,n.createElement("li",null,"Name: Your name will appear here"),n.createElement("li",null,"E-mail: And here goes the mail")))}}}]);
-//# sourceMappingURL=component---src-pages-profile-js-ede9c021e7c5f2fa1141.js.map
