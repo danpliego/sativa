@@ -9,7 +9,7 @@ var plugins = [{
     },{
       name: 'gatsby-plugin-manifest',
       plugin: require('/Users/danielpliego/projects/sativa/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"icon":"src/images/favicon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":null},
+      options: {"plugins":[],"icon":"src/images/favicon.ico","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"70e30d62c63141070bdd44d5dacc0231"},
     },{
       name: 'gatsby-plugin-google-gtag',
       plugin: require('/Users/danielpliego/projects/sativa/node_modules/gatsby-plugin-google-gtag/gatsby-ssr'),

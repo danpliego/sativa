@@ -4,15 +4,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "La Hora Sat",
+    title: "Sativa",
   },
   plugins: [
-    {
-      resolve: "gatsby-source-datocms",
-      options: {
-        apiToken: "b499b4d175f0abc9cbcd6d730cf2b4",
-      },
-    },
     "gatsby-plugin-sass",
     {
       resolve: "gatsby-plugin-google-analytics",
@@ -25,7 +19,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/favicon.png",
+        icon: "src/images/favicon.ico",
       },
     },
     {

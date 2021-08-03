@@ -1946,13 +1946,13 @@ var plugins = [{
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-manifest/gatsby-ssr */ "./node_modules/gatsby-plugin-manifest/gatsby-ssr.js"),
   options: {
     "plugins": [],
-    "icon": "src/images/favicon.png",
+    "icon": "src/images/favicon.ico",
     "legacy": true,
     "theme_color_in_head": true,
     "cache_busting_mode": "query",
     "crossOrigin": "anonymous",
     "include_favicon": true,
-    "cacheDigest": null
+    "cacheDigest": "70e30d62c63141070bdd44d5dacc0231"
   }
 }, {
   name: 'gatsby-plugin-google-gtag',
